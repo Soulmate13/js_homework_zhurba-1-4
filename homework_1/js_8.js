@@ -1,11 +1,10 @@
 // Пользователь вводит сумму денег в кошельке и цену одной шоколадки. Программа выводит, сколько шоколадок может купить пользователь, и сколько сдачи у него останется.
-const priceChocolate = 10;
 
-let amount, numberChocolate, amountLeft;
+let amount, numberChocolate, amountLeft, priceChocolate;
 
 amount = +prompt("How much money is in your pockets (in dollars)?");
-
-if (amount <= 9) alert(`Not enough cash for a chocolate bar`);
+priceChocolate = +prompt("How much does a a chocolate bar cost?")
+if (amount <= priceChocolate) alert(`Not enough cash for a chocolate bar`);
 else
 
     numberChocolate = amount / priceChocolate;
