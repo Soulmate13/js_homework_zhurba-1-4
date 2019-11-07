@@ -1,10 +1,17 @@
 // Пользователь вводит сумму вклада в банк на 2 месяца, с процентной ставкой депозита 5% годовых. Вывести сумму начисленных процентов.
-const rate = 0.05;
+let hw_01_10 = document.getElementById("hw_01_10");
 
-let deposit, interestAccrued;
+hw_01_10.onclick = function () {
 
-deposit = prompt("Enter your deposit amount for 2 month in USD")
+    const rate = 0.05;
 
-interestAccrued = deposit * rate * 1 / 6;
+    let deposit, interestAccrued;
 
-alert(`Your interest accrued is going to amount to ${interestAccrued.toFixed(3)} in two months`);
+    deposit = prompt("Enter your deposit amount for 2 month in USD")
+
+    interestAccrued = deposit * rate * 1 / 6;
+
+    alert(`Your interest accrued is going to amount to ${interestAccrued.toFixed(3)} in two months`);
+
+    return false;
+}

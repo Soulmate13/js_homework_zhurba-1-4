@@ -1,9 +1,15 @@
 // Запросите у пользователя радиус окружности и выведите площадь такой окружности.
+let hw_01_3 = document.getElementById("hw_01_4");
 
-let circleRadius, circleArea;
+hw_01_4.onclick = function () {
 
-circleRadius = prompt("Enter the radius of the circle in cm");
+    let circleRadius, circleArea;
 
-circleArea = Math.PI * Math.pow(circleRadius, 2);
+    circleRadius = prompt("Enter the radius of the circle in cm");
 
-alert(`Circle area is ${circleArea.toFixed(3)} sq cm`);
+    circleArea = Math.PI * Math.pow(circleRadius, 2);
+
+    alert(`Circle area is ${circleArea.toFixed(3)} sq cm`);
+
+    return false;
+}
