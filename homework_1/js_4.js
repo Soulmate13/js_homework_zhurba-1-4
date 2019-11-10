@@ -1,5 +1,5 @@
 // Запросите у пользователя радиус окружности и выведите площадь такой окружности.
-let hw_01_3 = document.getElementById("hw_01_4");
+let hw_01_4 = document.getElementById("hw_01_4");
 
 hw_01_4.onclick = function () {
 
