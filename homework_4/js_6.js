@@ -23,11 +23,6 @@ hw_04_6.onclick = function () {
             alert(`Number ${_number} is perfect!`)
 
         }
-
-        else {
-            alert(`Number ${_number} is not perfect`)
-
-        }
     }
 
     PerfectArrayCheck = function (_minNumber, _maxNumber) {
