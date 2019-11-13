@@ -4,6 +4,20 @@ let hw_03_6 = document.getElementById("hw_03_6");
 
 hw_03_6.onclick = function () {
 
+    while (window.confirm("Wanna solve a problem?") == true) {
+
+        let firstNumber, secondNumber, symbol, str, result;
+
+        firstNumber = prompt("Enter first number");
+        secondNumber = prompt("Enter second number");
+        symbol = prompt("Enter the symbol * / + -");
+
+        str = (firstNumber + symbol + secondNumber);
+        result = eval(str);
+
+        alert(`${str} = ${result}`);
+    }
+
 
     return false;
 };

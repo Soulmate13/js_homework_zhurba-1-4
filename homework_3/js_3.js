@@ -4,13 +4,26 @@ let hw_03_3 = document.getElementById("hw_03_3");
 
 hw_03_3.onclick = function () {
 
-    // let firstNumber;
+    let number, buffer, i;
 
-    // firstNumber = +prompt("Enter the first number");
+    number = +prompt("Enter number to check for dividers");
+    i = 0;
+    buffer = ``;
 
-    // for (i = 1; (firstNumber % i) > 0; i++) {
-    //     alert(`Common factor ${i}`)
-    // }
+    while (i <= number) {
 
+        if ((number % i) == 0) {
+            buffer += `${i} `;
+            i++;
+            continue;
+        }
+
+        else {
+            i++;
+            continue;
+        }
+
+    }
+    alert(`Your dividers are as follows ${buffer}`);
     return false;
 };
