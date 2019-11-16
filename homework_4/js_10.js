@@ -6,80 +6,30 @@ hw_04_10.onclick = function () {
 
     let CompareDates, DateInSeconds, date, dateOne, dateTwo, difference, secondsToTime, secondsResult, MillisecondsResult;
 
-    DateInSeconds = function (_year, _month, _day) {
+    DateInSeconds = function (_hours, _minutes, _seconds) { // getting the time from the user and converting it to seconds
 
-        do {
-            _year = +prompt("Enter the year");
-        }
+        hours = +prompt("Enter hours");
 
-        while (_year < 0);
+        while (hours < 0 || hours > 23) {
+            hours = +prompt("Please enter valid hours. Between 0 and 23");
+        };
 
-        do {
-            _month = +prompt("Enter the month. From 0 to 11");
-        }
+        minutes = +prompt("Enter minutes");
 
-        while ((_month < 0 || _month > 12));
+        while (minutes < 0 || minutes > 59) {
+            minutes = +prompt("Please enter valid minutes. Between 0 and 59");
+        };
 
-        _day = +prompt("Enter day");
+        seconds = +prompt("Enter seconds");
 
-        if ((_month == 0) || (_month == 2) || (_month == 4) || (_month == 6) || (_month == 7) || (_month == 9) || (_month == 11)) {
+        while (seconds < 0 || seconds > 59) {
+            seconds = +prompt("Please enter valid minutes. Between 0 and 59");
+        };
 
-            while (_day > 31) {
-                _day = +prompt("Enter day");
-            }
-        }
-
-        if ((_month == 3) || (_month == 5) || (_month == 7) || (_month == 10)) {
-
-            while (_day > 30) {
-                _day = +prompt("Enter day");
-            }
-
-        }
-
-        if (_month == 1) {
-
-            while (_day > 28) {
-
-                _day = +prompt("Enter day");
-
-            }
-        }
-
-        date = new Date();
-        date.setFullYear(_year, _month, _day);
-        MillisecondsResult = date.getTime();
-        secondsResult = Math.floor(MillisecondsResult / 1000);
+        secondsResult = (seconds) + (minutes * 60) + (hours * 3600);
         return secondsResult
 
     }
-
-
-
-    // DateInSeconds = function (_hours, _minutes, _seconds) { // getting the time from the user and converting it to seconds
-
-    //     hours = +prompt("Enter hours");
-
-    //     while (hours < 0 || hours > 23) {
-    //         hours = +prompt("Please enter valid hours. Between 0 and 23");
-    //     };
-
-    //     minutes = +prompt("Enter minutes");
-
-    //     while (minutes < 0 || minutes > 59) {
-    //         minutes = +prompt("Please enter valid minutes. Between 0 and 59");
-    //     };
-
-    //     seconds = +prompt("Enter seconds");
-
-    //     while (seconds < 0 || seconds > 59) {
-    //         seconds = +prompt("Please enter valid minutes. Between 0 and 59");
-    //     };
-
-    //     secondsResult = (seconds) + (minutes * 60) + (hours * 3600);
-    //     return secondsResult
-
-    // }
 
     CompareDates = function (_dateOne, _dateTwo) { // substracting the bigger date from a smaller date
 

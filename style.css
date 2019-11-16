@@ -1,11 +1,11 @@
-body {
-    max-width: 1500px;
+div {
+    width: 1300px;
 }
 
 a {
     text-decoration: none;
     color: black;
-    font-size: medium;
+    font-size: large;
 }
 
 a:hover {
