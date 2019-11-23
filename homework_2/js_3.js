@@ -12,9 +12,9 @@ hw_02_3.onclick = function () {
 
     secondDigit = number.slice(1, 2);
 
-    thirdDigit - number.slice(3);
+    thirdDigit - number.slice(2);
 
-    if ((firstDigit == secondDigit) || (firstDigit == secondDigit) || (secondDigit == thirdDigit)) {
+    if ((firstDigit == secondDigit) || (firstDigit == thirdDigit) || (secondDigit == thirdDigit)) {
 
         alert("Your number has same digits");
 
