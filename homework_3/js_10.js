@@ -4,6 +4,32 @@ let hw_03_10 = document.getElementById("hw_03_10");
 
 hw_03_10.onclick = function () {
 
+    let start = 0;
+    let end = 100;
+
+
+    while (true) {
+
+        let number = Math.floor((start + end) / 2);
+        let result = prompt(`Is your number bigger than (b), less than (l) or equal to ${number}`);
+
+        if (result == "=") {
+            alert("Congratulations!");
+            break;
+        }
+
+        if (result == "b") {
+            start = number + 1;
+        }
+
+        if (result == "l") {
+            end = number - 1;
+        }
+
+
+    }
+
+
 
     return false;
 };

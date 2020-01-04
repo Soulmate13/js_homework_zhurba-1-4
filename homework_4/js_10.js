@@ -4,7 +4,7 @@ let hw_04_10 = document.getElementById("hw_04_10");
 
 hw_04_10.onclick = function () {
 
-    let CompareDates, DateInSeconds, date, dateOne, dateTwo, difference, secondsToTime, secondsResult, MillisecondsResult;
+    let CompareDates, DateInSeconds, dateOne, dateTwo, difference, secondsToTime, secondsResult;
 
     DateInSeconds = function (_hours, _minutes, _seconds) { // getting the time from the user and converting it to seconds
 

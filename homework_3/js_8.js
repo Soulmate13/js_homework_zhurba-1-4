@@ -4,9 +4,7 @@ let hw_03_8 = document.getElementById("hw_03_8");
 
 hw_03_8.onclick = function () {
 
-    let day;
-
-    day = [
+    let day = [
         "Monday",
         "Tuesday",
         "Wednesday",
@@ -16,9 +14,17 @@ hw_03_8.onclick = function () {
         "Sunday",
     ]
 
-    for (i = 0; i < day.length; i++) {
-        window.confirm(`Today is ${day[i]}. Wanna see the next day?`);
+    index = 0;
+
+    while (window.confirm(`Today is ${day[index]}. Wanna see the next day?`) == true) {
+        index += 1;
+
+        if (index == 7) {
+            index = 0;
+        }
+
     }
 
     return false;
+
 };

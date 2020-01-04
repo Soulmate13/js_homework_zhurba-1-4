@@ -15,12 +15,10 @@ hw_03_3.onclick = function () {
         if ((number % i) == 0) {
             buffer += `${i} `;
             i++;
-            continue;
         }
 
         else {
             i++;
-            continue;
         }
 
     }

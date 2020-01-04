@@ -6,8 +6,8 @@ hw_04_4.onclick = function () {
 
     let rectLength, rectHeight, rectArea, CaclucateArea;
 
-    rectLength = +prompt("Enter rectangle height to calculate the area");
-    rectHeight = +prompt("Enter rectange height to calculate the area");
+    rectLength = +prompt("Enter rectangle length to calculate the area");
+    rectHeight = +prompt("Enter rectange height  to calculate the area");
 
     CaclucateArea = function (_rectLength, _rectHeight) {
 
